@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Capstone-EPICODE.props" />
+</Project>
