@@ -48,5 +48,11 @@ namespace Capstone_EPICODE.Services
         {
             return await _context.Roles.ToListAsync();
         }
+
+        public async Task<Role> GetByName(string name)
+        {
+            return await _context.Roles.FirstOrDefaultAsync(r => r.Name == name);
+        }
+
     }
 }

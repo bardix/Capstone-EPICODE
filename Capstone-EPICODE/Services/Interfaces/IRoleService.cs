@@ -9,5 +9,8 @@ namespace Capstone_EPICODE.Services.Interfaces
         Task<Role> Delete(int id);
         Task<Role> Read(int id);
         Task<IEnumerable<Role>> GetAll();
+
+        Task<Role> GetByName(string name);
+
     }
 }

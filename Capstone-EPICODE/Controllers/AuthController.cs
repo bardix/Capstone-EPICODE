@@ -78,7 +78,11 @@ namespace Capstone_EPICODE.Controllers
         public async Task<IActionResult> Register()
         {
             var roles = await _roleSvc.GetAll();
-            ViewBag.Roles = roles;
+            ViewBag.Roles = roles.Select(role => new Microsoft.AspNetCore.Mvc.Rendering.SelectListItem
+            {
+                Value = role.Id.ToString(),
+                Text = role.Name
+            }).ToList();
             return View();
         }
 
@@ -89,6 +93,15 @@ namespace Capstone_EPICODE.Controllers
         {
             if (ModelState.IsValid)
             {
+
+                
+                if (!roleSelected.Any())
+                {
+                    var defaultRole = await _roleSvc.GetByName("Utente");
+                    roleSelected = new List<int> { defaultRole.Id };
+                }
+
+
                 await _authSvc.Create(user, roleSelected);
                 return RedirectToAction("Login", "Auth");
             }

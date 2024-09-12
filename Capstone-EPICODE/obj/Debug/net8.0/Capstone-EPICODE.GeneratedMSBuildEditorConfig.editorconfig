@@ -26,6 +26,18 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\david\Desktop\Epicode\Esercitazioni Epicode\Capstone\Capstone-EPICODE\Capstone-EPICODE
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/david/Desktop/Epicode/Esercitazioni Epicode/Capstone/Capstone-EPICODE/Capstone-EPICODE/Views/Auth/AllRoles.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxBbGxSb2xlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/david/Desktop/Epicode/Esercitazioni Epicode/Capstone/Capstone-EPICODE/Capstone-EPICODE/Views/Auth/CreateRole.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxDcmVhdGVSb2xlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/david/Desktop/Epicode/Esercitazioni Epicode/Capstone/Capstone-EPICODE/Capstone-EPICODE/Views/Auth/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/david/Desktop/Epicode/Esercitazioni Epicode/Capstone/Capstone-EPICODE/Capstone-EPICODE/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
