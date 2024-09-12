@@ -30,8 +30,20 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxBbGxSb2xlcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/david/Desktop/Epicode/Esercitazioni Epicode/Capstone/Capstone-EPICODE/Capstone-EPICODE/Views/Auth/AllUsers.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxBbGxVc2Vycy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/david/Desktop/Epicode/Esercitazioni Epicode/Capstone/Capstone-EPICODE/Capstone-EPICODE/Views/Auth/CreateRole.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxDcmVhdGVSb2xlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/david/Desktop/Epicode/Esercitazioni Epicode/Capstone/Capstone-EPICODE/Capstone-EPICODE/Views/Auth/DeleteConfirmedRole.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxEZWxldGVDb25maXJtZWRSb2xlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/david/Desktop/Epicode/Esercitazioni Epicode/Capstone/Capstone-EPICODE/Capstone-EPICODE/Views/Auth/EditRole.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxFZGl0Um9sZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/david/Desktop/Epicode/Esercitazioni Epicode/Capstone/Capstone-EPICODE/Capstone-EPICODE/Views/Auth/Register.cshtml]

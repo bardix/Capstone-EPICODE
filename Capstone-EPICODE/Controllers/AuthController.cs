@@ -97,7 +97,7 @@ namespace Capstone_EPICODE.Controllers
                 
                 if (!roleSelected.Any())
                 {
-                    var defaultRole = await _roleSvc.GetByName("Utente");
+                    var defaultRole = await _roleSvc.GetByName("User");
                     roleSelected = new List<int> { defaultRole.Id };
                 }
 
