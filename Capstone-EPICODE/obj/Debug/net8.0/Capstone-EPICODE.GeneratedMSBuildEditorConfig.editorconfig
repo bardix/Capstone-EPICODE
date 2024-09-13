@@ -42,8 +42,32 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxEZWxldGVDb25maXJtZWRSb2xlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/david/Desktop/Epicode/Esercitazioni Epicode/Capstone/Capstone-EPICODE/Capstone-EPICODE/Views/Auth/DeleteRole.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxEZWxldGVSb2xlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/david/Desktop/Epicode/Esercitazioni Epicode/Capstone/Capstone-EPICODE/Capstone-EPICODE/Views/Auth/DeleteUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxEZWxldGVVc2VyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/david/Desktop/Epicode/Esercitazioni Epicode/Capstone/Capstone-EPICODE/Capstone-EPICODE/Views/Auth/DeleteUserConfirmed.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxEZWxldGVVc2VyQ29uZmlybWVkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/david/Desktop/Epicode/Esercitazioni Epicode/Capstone/Capstone-EPICODE/Capstone-EPICODE/Views/Auth/DetailUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxEZXRhaWxVc2VyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/david/Desktop/Epicode/Esercitazioni Epicode/Capstone/Capstone-EPICODE/Capstone-EPICODE/Views/Auth/EditRole.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxFZGl0Um9sZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/david/Desktop/Epicode/Esercitazioni Epicode/Capstone/Capstone-EPICODE/Capstone-EPICODE/Views/Auth/EditUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxFZGl0VXNlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/david/Desktop/Epicode/Esercitazioni Epicode/Capstone/Capstone-EPICODE/Capstone-EPICODE/Views/Auth/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/david/Desktop/Epicode/Esercitazioni Epicode/Capstone/Capstone-EPICODE/Capstone-EPICODE/Views/Auth/Register.cshtml]

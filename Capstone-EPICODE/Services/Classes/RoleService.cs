@@ -30,14 +30,27 @@ namespace Capstone_EPICODE.Services
 
         public async Task<Role> Delete(int id)
         {
-            var role = await _context.Roles.FindAsync(id);
-            if (role != null)
+            // Trova il ruolo e include la relazione con gli utenti
+            var role = await _context.Roles.Include(r => r.Users).FirstOrDefaultAsync(r => r.Id == id);
+
+            if (role == null)
             {
-                _context.Roles.Remove(role);
-                await _context.SaveChangesAsync();
+                throw new Exception("Ruolo non trovato.");
             }
+
+            // Verifica se il ruolo è associato a utenti
+            if (role.Users.Any())  // Se ci sono utenti associati
+            {
+                throw new Exception("Il ruolo è associato a uno o più utenti e non può essere eliminato.");
+            }
+
+            // Elimina il ruolo se non è associato a utenti
+            _context.Roles.Remove(role);
+            await _context.SaveChangesAsync();
+
             return role;
         }
+
 
         public async Task<Role> Read(int id)
         {

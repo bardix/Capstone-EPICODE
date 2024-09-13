@@ -1,0 +1,11 @@
+﻿@model Capstone_EPICODE.Models.Role
+
+<h2>Conferma Eliminazione</h2>
+
+<p>Sei sicuro di voler eliminare il ruolo "@Model.Name"?</p>
+
+<form asp-action="DeleteConfirmedRole" method="post">
+    <input type="hidden" name="id" value="@Model.Id" />
+    <button type="submit" class="btn btn-danger">Elimina</button>
+    <a asp-action="AllRoles" class="btn btn-secondary">Annulla</a>
+</form>

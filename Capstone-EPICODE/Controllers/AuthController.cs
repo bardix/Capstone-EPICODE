@@ -63,15 +63,42 @@ namespace Capstone_EPICODE.Controllers
 
         public async Task<IActionResult> DeleteRole(int id)
         {
+            // Recupera il ruolo da eliminare utilizzando il servizio
             var role = await _roleSvc.Read(id);
-            return View(role);
+
+            // Se il ruolo non esiste, mostra un errore o gestisci l'eccezione
+            if (role == null)
+            {
+                return NotFound();
+            }
+
+            return View(role);  // Mostra la vista per confermare l'eliminazione
         }
 
         public async Task<IActionResult> DeleteConfirmedRole(int id)
         {
-            await _roleSvc.Delete(id);
-            return RedirectToAction("AllRoles", "Auth");
+            try
+            {
+                // Chiama il metodo Delete del servizio per eliminare il ruolo
+                await _roleSvc.Delete(id);
+                return RedirectToAction("AllRoles", "Auth");  // Dopo l'eliminazione, reindirizza alla lista dei ruoli
+            }
+            catch (Exception ex)
+            {
+                // Gestione degli errori, ad esempio se il ruolo è associato a utenti
+                ModelState.AddModelError("", ex.Message);
+
+                // Ricarica il ruolo da eliminare per visualizzare di nuovo la conferma
+                var role = await _roleSvc.Read(id);
+                if (role == null)
+                {
+                    return NotFound();
+                }
+
+                return View("DeleteRole", role);  // Ritorna alla vista di eliminazione con il messaggio di errore
+            }
         }
+
 
         // Registrazione
         [AllowAnonymous]
@@ -93,20 +120,30 @@ namespace Capstone_EPICODE.Controllers
         {
             if (ModelState.IsValid)
             {
-
-                
+                // Controlla se l'utente ha selezionato uno o più ruoli
                 if (!roleSelected.Any())
                 {
-                    var defaultRole = await _roleSvc.GetByName("User");
-                    roleSelected = new List<int> { defaultRole.Id };
+                    // Se non sono stati selezionati ruoli, assegna il ruolo di default "User"
+                    var defaultRole = await _roleSvc.GetByName("User");  // Recupera il ruolo di default dal servizio
+                    roleSelected = new List<int> { defaultRole.Id };     // Assegna il ruolo di "User"
                 }
 
-
+                // Passiamo i ruoli selezionati o il ruolo di default al servizio
                 await _authSvc.Create(user, roleSelected);
                 return RedirectToAction("Login", "Auth");
             }
-            return View();
+
+            // Ricarica i ruoli nel caso di errore nella registrazione
+            var roles = await _roleSvc.GetAll();
+            ViewBag.Roles = roles.Select(role => new Microsoft.AspNetCore.Mvc.Rendering.SelectListItem
+            {
+                Value = role.Id.ToString(),
+                Text = role.Name
+            }).ToList();
+
+            return View(user);
         }
+
 
         // Login
         [AllowAnonymous]
@@ -181,6 +218,30 @@ namespace Capstone_EPICODE.Controllers
 
             ViewBag.Roles = rolesName;
             return View(user);
+        }
+
+        public async Task<IActionResult> EditUser(int id)
+        {
+            var user = await _authSvc.GetById(id);  // Recupera l'utente con i ruoli
+            if (user == null)
+            {
+                return NotFound();
+            }
+
+            // Recupera tutti i ruoli
+            var allRoles = await _roleSvc.GetAll();
+
+            // Trova i ruoli non ancora assegnati all'utente
+            var availableRoles = allRoles.Where(role => !user.Roles.Any(ur => ur.Id == role.Id))
+                                          .Select(role => new Microsoft.AspNetCore.Mvc.Rendering.SelectListItem
+                                          {
+                                              Value = role.Id.ToString(),
+                                              Text = role.Name
+                                          }).ToList();
+
+            ViewBag.AvailableRoles = availableRoles;  // Passa i ruoli non assegnati alla vista
+
+            return View(user);  // Passa l'utente alla vista
         }
 
         public async Task<IActionResult> AddRoleToUser(int userid, string roleName)
