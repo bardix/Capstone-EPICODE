@@ -3,24 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Capstone\\Capstone-EPICODE\\Capstone-EPICODE\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{96127FCE-A208-4C3B-9DD9-943721E1AEBC}|Capstone-EPICODE.csproj|c:\\users\\david\\desktop\\epicode\\esercitazioni epicode\\capstone\\capstone-epicode\\capstone-epicode\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{96127FCE-A208-4C3B-9DD9-943721E1AEBC}|Capstone-EPICODE.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/localhost_sqlexpress/Capstone_EPICODE/True/SqlTable/dbo.RoleUsers.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/localhost_sqlexpress/Capstone_EPICODE/True/SqlTable/dbo.Users.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{96127FCE-A208-4C3B-9DD9-943721E1AEBC}|Capstone-EPICODE.csproj|c:\\users\\david\\desktop\\epicode\\esercitazioni epicode\\capstone\\capstone-epicode\\capstone-epicode\\views\\auth\\allusers.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{96127FCE-A208-4C3B-9DD9-943721E1AEBC}|Capstone-EPICODE.csproj|solutionrelative:views\\auth\\allusers.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{96127FCE-A208-4C3B-9DD9-943721E1AEBC}|Capstone-EPICODE.csproj|c:\\users\\david\\desktop\\epicode\\esercitazioni epicode\\capstone\\capstone-epicode\\capstone-epicode\\views\\auth\\detailuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{96127FCE-A208-4C3B-9DD9-943721E1AEBC}|Capstone-EPICODE.csproj|solutionrelative:views\\auth\\detailuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{96127FCE-A208-4C3B-9DD9-943721E1AEBC}|Capstone-EPICODE.csproj|c:\\users\\david\\desktop\\epicode\\esercitazioni epicode\\capstone\\capstone-epicode\\capstone-epicode\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{96127FCE-A208-4C3B-9DD9-943721E1AEBC}|Capstone-EPICODE.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -28,68 +10,10 @@
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/localhost_sqlexpress/Capstone_EPICODE/True/SqlTable/dbo.Roles.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{96127FCE-A208-4C3B-9DD9-943721E1AEBC}|Capstone-EPICODE.csproj|c:\\users\\david\\desktop\\epicode\\esercitazioni epicode\\capstone\\capstone-epicode\\capstone-epicode\\views\\auth\\deleterole.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{96127FCE-A208-4C3B-9DD9-943721E1AEBC}|Capstone-EPICODE.csproj|solutionrelative:views\\auth\\deleterole.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/localhost_sqlexpress/Capstone_EPICODE/True/SqlTable/dbo.RoleUsers.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{96127FCE-A208-4C3B-9DD9-943721E1AEBC}|Capstone-EPICODE.csproj|c:\\users\\david\\desktop\\epicode\\esercitazioni epicode\\capstone\\capstone-epicode\\capstone-epicode\\services\\classes\\roleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{96127FCE-A208-4C3B-9DD9-943721E1AEBC}|Capstone-EPICODE.csproj|solutionrelative:services\\classes\\roleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{96127FCE-A208-4C3B-9DD9-943721E1AEBC}|Capstone-EPICODE.csproj|c:\\users\\david\\desktop\\epicode\\esercitazioni epicode\\capstone\\capstone-epicode\\capstone-epicode\\models\\autenticazione\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{96127FCE-A208-4C3B-9DD9-943721E1AEBC}|Capstone-EPICODE.csproj|solutionrelative:models\\autenticazione\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{96127FCE-A208-4C3B-9DD9-943721E1AEBC}|Capstone-EPICODE.csproj|c:\\users\\david\\desktop\\epicode\\esercitazioni epicode\\capstone\\capstone-epicode\\capstone-epicode\\services\\interfaces\\iroleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{96127FCE-A208-4C3B-9DD9-943721E1AEBC}|Capstone-EPICODE.csproj|solutionrelative:services\\interfaces\\iroleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{96127FCE-A208-4C3B-9DD9-943721E1AEBC}|Capstone-EPICODE.csproj|c:\\users\\david\\desktop\\epicode\\esercitazioni epicode\\capstone\\capstone-epicode\\capstone-epicode\\views\\auth\\deleteconfirmedrole.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{96127FCE-A208-4C3B-9DD9-943721E1AEBC}|Capstone-EPICODE.csproj|solutionrelative:views\\auth\\deleteconfirmedrole.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{96127FCE-A208-4C3B-9DD9-943721E1AEBC}|Capstone-EPICODE.csproj|c:\\users\\david\\desktop\\epicode\\esercitazioni epicode\\capstone\\capstone-epicode\\capstone-epicode\\views\\auth\\allroles.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{96127FCE-A208-4C3B-9DD9-943721E1AEBC}|Capstone-EPICODE.csproj|solutionrelative:views\\auth\\allroles.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{96127FCE-A208-4C3B-9DD9-943721E1AEBC}|Capstone-EPICODE.csproj|c:\\users\\david\\desktop\\epicode\\esercitazioni epicode\\capstone\\capstone-epicode\\capstone-epicode\\views\\auth\\edituser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{96127FCE-A208-4C3B-9DD9-943721E1AEBC}|Capstone-EPICODE.csproj|solutionrelative:views\\auth\\edituser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{96127FCE-A208-4C3B-9DD9-943721E1AEBC}|Capstone-EPICODE.csproj|c:\\users\\david\\desktop\\epicode\\esercitazioni epicode\\capstone\\capstone-epicode\\capstone-epicode\\views\\auth\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{96127FCE-A208-4C3B-9DD9-943721E1AEBC}|Capstone-EPICODE.csproj|solutionrelative:views\\auth\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{96127FCE-A208-4C3B-9DD9-943721E1AEBC}|Capstone-EPICODE.csproj|c:\\users\\david\\desktop\\epicode\\esercitazioni epicode\\capstone\\capstone-epicode\\capstone-epicode\\views\\auth\\deleteuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{96127FCE-A208-4C3B-9DD9-943721E1AEBC}|Capstone-EPICODE.csproj|solutionrelative:views\\auth\\deleteuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{96127FCE-A208-4C3B-9DD9-943721E1AEBC}|Capstone-EPICODE.csproj|c:\\users\\david\\desktop\\epicode\\esercitazioni epicode\\capstone\\capstone-epicode\\capstone-epicode\\views\\auth\\deleteuserconfirmed.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{96127FCE-A208-4C3B-9DD9-943721E1AEBC}|Capstone-EPICODE.csproj|solutionrelative:views\\auth\\deleteuserconfirmed.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{96127FCE-A208-4C3B-9DD9-943721E1AEBC}|Capstone-EPICODE.csproj|c:\\users\\david\\desktop\\epicode\\esercitazioni epicode\\capstone\\capstone-epicode\\capstone-epicode\\views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{96127FCE-A208-4C3B-9DD9-943721E1AEBC}|Capstone-EPICODE.csproj|solutionrelative:views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{96127FCE-A208-4C3B-9DD9-943721E1AEBC}|Capstone-EPICODE.csproj|c:\\users\\david\\desktop\\epicode\\esercitazioni epicode\\capstone\\capstone-epicode\\capstone-epicode\\views\\auth\\createrole.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{96127FCE-A208-4C3B-9DD9-943721E1AEBC}|Capstone-EPICODE.csproj|solutionrelative:views\\auth\\createrole.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{96127FCE-A208-4C3B-9DD9-943721E1AEBC}|Capstone-EPICODE.csproj|c:\\users\\david\\desktop\\epicode\\esercitazioni epicode\\capstone\\capstone-epicode\\capstone-epicode\\models\\userviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{96127FCE-A208-4C3B-9DD9-943721E1AEBC}|Capstone-EPICODE.csproj|solutionrelative:models\\userviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{96127FCE-A208-4C3B-9DD9-943721E1AEBC}|Capstone-EPICODE.csproj|c:\\users\\david\\desktop\\epicode\\esercitazioni epicode\\capstone\\capstone-epicode\\capstone-epicode\\models\\autenticazione\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{96127FCE-A208-4C3B-9DD9-943721E1AEBC}|Capstone-EPICODE.csproj|solutionrelative:models\\autenticazione\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{96127FCE-A208-4C3B-9DD9-943721E1AEBC}|Capstone-EPICODE.csproj|c:\\users\\david\\desktop\\epicode\\esercitazioni epicode\\capstone\\capstone-epicode\\capstone-epicode\\services\\classes\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{96127FCE-A208-4C3B-9DD9-943721E1AEBC}|Capstone-EPICODE.csproj|solutionrelative:services\\classes\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{96127FCE-A208-4C3B-9DD9-943721E1AEBC}|Capstone-EPICODE.csproj|c:\\users\\david\\desktop\\epicode\\esercitazioni epicode\\capstone\\capstone-epicode\\capstone-epicode\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{96127FCE-A208-4C3B-9DD9-943721E1AEBC}|Capstone-EPICODE.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/localhost_sqlexpress/Capstone_EPICODE/True/SqlTable/dbo.Users.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     }
   ],
   "DocumentGroupContainers": [
@@ -99,7 +23,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 337,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -107,59 +31,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "DetailUser.cshtml",
-              "DocumentMoniker": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Capstone\\Capstone-EPICODE\\Capstone-EPICODE\\Views\\Auth\\DetailUser.cshtml",
-              "RelativeDocumentMoniker": "Views\\Auth\\DetailUser.cshtml",
-              "ToolTip": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Capstone\\Capstone-EPICODE\\Capstone-EPICODE\\Views\\Auth\\DetailUser.cshtml",
-              "RelativeToolTip": "Views\\Auth\\DetailUser.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-13T13:34:45.952Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "RoleService.cs",
-              "DocumentMoniker": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Capstone\\Capstone-EPICODE\\Capstone-EPICODE\\Services\\Classes\\RoleService.cs",
-              "RelativeDocumentMoniker": "Services\\Classes\\RoleService.cs",
-              "ToolTip": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Capstone\\Capstone-EPICODE\\Capstone-EPICODE\\Services\\Classes\\RoleService.cs",
-              "RelativeToolTip": "Services\\Classes\\RoleService.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAAmwC0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-13T14:41:06.974Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Capstone\\Capstone-EPICODE\\Capstone-EPICODE\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Capstone\\Capstone-EPICODE\\Capstone-EPICODE\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "Controllers\\AuthController.cs",
-              "ViewState": "AQIAAHUAAAAAAAAAAAAwwIYAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-13T12:45:40.048Z",
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Capstone\\Capstone-EPICODE\\Capstone-EPICODE\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Capstone\\Capstone-EPICODE\\Capstone-EPICODE\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-14T11:09:25.179Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "AllUsers.cshtml",
-              "DocumentMoniker": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Capstone\\Capstone-EPICODE\\Capstone-EPICODE\\Views\\Auth\\AllUsers.cshtml",
-              "RelativeDocumentMoniker": "Views\\Auth\\AllUsers.cshtml",
-              "ToolTip": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Capstone\\Capstone-EPICODE\\Capstone-EPICODE\\Views\\Auth\\AllUsers.cshtml",
-              "RelativeToolTip": "Views\\Auth\\AllUsers.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACwAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-13T13:20:28.635Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "dbo.Users [Dati]",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/localhost_sqlexpress/Capstone_EPICODE/True/SqlTable/dbo.Users.sql",
               "ToolTip": "dbo.Users [Dati]",
@@ -169,7 +54,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "dbo.RoleUsers [Dati]",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/localhost_sqlexpress/Capstone_EPICODE/True/SqlTable/dbo.RoleUsers.sql",
               "ToolTip": "dbo.RoleUsers [Dati]",
@@ -179,220 +64,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "DeleteRole.cshtml",
-              "DocumentMoniker": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Capstone\\Capstone-EPICODE\\Capstone-EPICODE\\Views\\Auth\\DeleteRole.cshtml",
-              "RelativeDocumentMoniker": "Views\\Auth\\DeleteRole.cshtml",
-              "ToolTip": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Capstone\\Capstone-EPICODE\\Capstone-EPICODE\\Views\\Auth\\DeleteRole.cshtml",
-              "RelativeToolTip": "Views\\Auth\\DeleteRole.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-13T14:29:45.467Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "dbo.Roles [Dati]",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/localhost_sqlexpress/Capstone_EPICODE/True/SqlTable/dbo.Roles.sql",
               "ToolTip": "dbo.Roles [Dati]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
               "WhenOpened": "2024-09-12T09:48:03.995Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "IRoleService.cs",
-              "DocumentMoniker": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Capstone\\Capstone-EPICODE\\Capstone-EPICODE\\Services\\Interfaces\\IRoleService.cs",
-              "RelativeDocumentMoniker": "Services\\Interfaces\\IRoleService.cs",
-              "ToolTip": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Capstone\\Capstone-EPICODE\\Capstone-EPICODE\\Services\\Interfaces\\IRoleService.cs",
-              "RelativeToolTip": "Services\\Interfaces\\IRoleService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-13T14:40:58.614Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Role.cs",
-              "DocumentMoniker": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Capstone\\Capstone-EPICODE\\Capstone-EPICODE\\Models\\Autenticazione\\Role.cs",
-              "RelativeDocumentMoniker": "Models\\Autenticazione\\Role.cs",
-              "ToolTip": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Capstone\\Capstone-EPICODE\\Capstone-EPICODE\\Models\\Autenticazione\\Role.cs",
-              "RelativeToolTip": "Models\\Autenticazione\\Role.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-13T14:41:04.228Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Capstone\\Capstone-EPICODE\\Capstone-EPICODE\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Capstone\\Capstone-EPICODE\\Capstone-EPICODE\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAACAAAAAAAAAAAAAWwC0AAABBAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-13T14:51:17.718Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "DeleteConfirmedRole.cshtml",
-              "DocumentMoniker": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Capstone\\Capstone-EPICODE\\Capstone-EPICODE\\Views\\Auth\\DeleteConfirmedRole.cshtml",
-              "RelativeDocumentMoniker": "Views\\Auth\\DeleteConfirmedRole.cshtml",
-              "ToolTip": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Capstone\\Capstone-EPICODE\\Capstone-EPICODE\\Views\\Auth\\DeleteConfirmedRole.cshtml",
-              "RelativeToolTip": "Views\\Auth\\DeleteConfirmedRole.cshtml",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAACAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-13T13:31:43.412Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "AllRoles.cshtml",
-              "DocumentMoniker": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Capstone\\Capstone-EPICODE\\Capstone-EPICODE\\Views\\Auth\\AllRoles.cshtml",
-              "RelativeDocumentMoniker": "Views\\Auth\\AllRoles.cshtml",
-              "ToolTip": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Capstone\\Capstone-EPICODE\\Capstone-EPICODE\\Views\\Auth\\AllRoles.cshtml",
-              "RelativeToolTip": "Views\\Auth\\AllRoles.cshtml",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAACAAAABAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-13T12:48:17.388Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Register.cshtml",
-              "DocumentMoniker": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Capstone\\Capstone-EPICODE\\Capstone-EPICODE\\Views\\Auth\\Register.cshtml",
-              "RelativeDocumentMoniker": "Views\\Auth\\Register.cshtml",
-              "ToolTip": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Capstone\\Capstone-EPICODE\\Capstone-EPICODE\\Views\\Auth\\Register.cshtml",
-              "RelativeToolTip": "Views\\Auth\\Register.cshtml",
-              "ViewState": "AQIAADIAAAAAAAAAAAAWwEMAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-13T13:16:03.195Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "EditUser.cshtml",
-              "DocumentMoniker": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Capstone\\Capstone-EPICODE\\Capstone-EPICODE\\Views\\Auth\\EditUser.cshtml",
-              "RelativeDocumentMoniker": "Views\\Auth\\EditUser.cshtml",
-              "ToolTip": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Capstone\\Capstone-EPICODE\\Capstone-EPICODE\\Views\\Auth\\EditUser.cshtml",
-              "RelativeToolTip": "Views\\Auth\\EditUser.cshtml",
-              "ViewState": "AQIAABUAAAAAAAAAAAAAADcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-13T13:44:56.087Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "DeleteUser.cshtml",
-              "DocumentMoniker": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Capstone\\Capstone-EPICODE\\Capstone-EPICODE\\Views\\Auth\\DeleteUser.cshtml",
-              "RelativeDocumentMoniker": "Views\\Auth\\DeleteUser.cshtml",
-              "ToolTip": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Capstone\\Capstone-EPICODE\\Capstone-EPICODE\\Views\\Auth\\DeleteUser.cshtml",
-              "RelativeToolTip": "Views\\Auth\\DeleteUser.cshtml",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-13T13:41:26.752Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "DeleteUserConfirmed.cshtml",
-              "DocumentMoniker": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Capstone\\Capstone-EPICODE\\Capstone-EPICODE\\Views\\Auth\\DeleteUserConfirmed.cshtml",
-              "RelativeDocumentMoniker": "Views\\Auth\\DeleteUserConfirmed.cshtml",
-              "ToolTip": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Capstone\\Capstone-EPICODE\\Capstone-EPICODE\\Views\\Auth\\DeleteUserConfirmed.cshtml",
-              "RelativeToolTip": "Views\\Auth\\DeleteUserConfirmed.cshtml",
-              "ViewState": "AQIAABUAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-13T13:38:22.366Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Capstone\\Capstone-EPICODE\\Capstone-EPICODE\\Views\\Auth\\Login.cshtml",
-              "RelativeDocumentMoniker": "Views\\Auth\\Login.cshtml",
-              "ToolTip": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Capstone\\Capstone-EPICODE\\Capstone-EPICODE\\Views\\Auth\\Login.cshtml",
-              "RelativeToolTip": "Views\\Auth\\Login.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-13T12:48:00.195Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "CreateRole.cshtml",
-              "DocumentMoniker": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Capstone\\Capstone-EPICODE\\Capstone-EPICODE\\Views\\Auth\\CreateRole.cshtml",
-              "RelativeDocumentMoniker": "Views\\Auth\\CreateRole.cshtml",
-              "ToolTip": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Capstone\\Capstone-EPICODE\\Capstone-EPICODE\\Views\\Auth\\CreateRole.cshtml",
-              "RelativeToolTip": "Views\\Auth\\CreateRole.cshtml",
-              "ViewState": "AQIAABUAAAAAAAAAAAAAAB8AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-13T13:20:31.087Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Capstone\\Capstone-EPICODE\\Capstone-EPICODE\\Models\\Autenticazione\\User.cs",
-              "RelativeDocumentMoniker": "Models\\Autenticazione\\User.cs",
-              "ToolTip": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Capstone\\Capstone-EPICODE\\Capstone-EPICODE\\Models\\Autenticazione\\User.cs",
-              "RelativeToolTip": "Models\\Autenticazione\\User.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-13T12:48:44.621Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "UserViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Capstone\\Capstone-EPICODE\\Capstone-EPICODE\\Models\\UserViewModel.cs",
-              "RelativeDocumentMoniker": "Models\\UserViewModel.cs",
-              "ToolTip": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Capstone\\Capstone-EPICODE\\Capstone-EPICODE\\Models\\UserViewModel.cs",
-              "RelativeToolTip": "Models\\UserViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-13T12:51:29.296Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "AuthService.cs",
-              "DocumentMoniker": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Capstone\\Capstone-EPICODE\\Capstone-EPICODE\\Services\\Classes\\AuthService.cs",
-              "RelativeDocumentMoniker": "Services\\Classes\\AuthService.cs",
-              "ToolTip": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Capstone\\Capstone-EPICODE\\Capstone-EPICODE\\Services\\Classes\\AuthService.cs",
-              "RelativeToolTip": "Services\\Classes\\AuthService.cs",
-              "ViewState": "AQIAACQAAAAAAAAAAAAYwDUAAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-13T13:04:54.039Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Capstone\\Capstone-EPICODE\\Capstone-EPICODE\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Capstone\\Capstone-EPICODE\\Capstone-EPICODE\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAxAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-13T13:10:33.58Z",
               "EditorCaption": ""
             }
           ]
