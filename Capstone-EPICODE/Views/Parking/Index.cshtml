@@ -1,0 +1,36 @@
+﻿@model IEnumerable<Capstone_EPICODE.Models.Parcheggio.Parking>
+
+<h2>Elenco Parcheggi</h2>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Aggiungi nuovo parcheggio</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Disponibilità</th>
+            <th>Latitudine</th>
+            <th>Longitudine</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Name</td>
+                <td>@(item.IsAvailable ? "Disponibile" : "Occupato")</td>
+                <td>@item.Latitude</td>
+                <td>@item.Longitude</td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info">Dettagli</a> |
+                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning">Modifica</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger">Cancella</a> |
+                    <a asp-action="AssignParkings" asp-route-id="@item.Id" class="btn btn-info">Assegna Parcheggio</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

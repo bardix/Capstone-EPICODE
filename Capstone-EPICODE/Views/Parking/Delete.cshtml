@@ -1,0 +1,35 @@
+﻿@model Capstone_EPICODE.Models.Parcheggio.Parking
+
+<h2>Cancella Parcheggio</h2>
+
+<h3>Sei sicuro di voler cancellare questo parcheggio?</h3>
+<div>
+    <h4>@Model.Name</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            Disponibilità
+        </dt>
+        <dd class="col-sm-10">
+            @(Model.IsAvailable ? "Disponibile" : "Occupato")
+        </dd>
+        <dt class="col-sm-2">
+            Latitudine
+        </dt>
+        <dd class="col-sm-10">
+            @Model.Latitude
+        </dd>
+        <dt class="col-sm-2">
+            Longitudine
+        </dt>
+        <dd class="col-sm-10">
+            @Model.Longitude
+        </dd>
+    </dl>
+</div>
+
+<form asp-action="Delete">
+    <input type="hidden" asp-for="Id" />
+    <input type="submit" value="Cancella" class="btn btn-danger" /> |
+    <a asp-action="Index" class="btn btn-secondary">Annulla</a>
+</form>

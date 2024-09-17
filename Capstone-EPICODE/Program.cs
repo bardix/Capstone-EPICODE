@@ -14,6 +14,7 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddScoped<IPasswordEnconder, PasswordEnconder>();
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<IRoleService, RoleService>();
+builder.Services.AddScoped<IParkingService, ParkingService>();
 
 // Connessione al database
 var conn = builder.Configuration.GetConnectionString("SqlServer")!;

@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Capstone_EPICODE.Models;
+using Capstone_EPICODE.Models.Parcheggio;
 
 namespace Capstone_EPICODE.Data
 {
@@ -12,6 +13,7 @@ namespace Capstone_EPICODE.Data
 
         public DbSet<User> Users { get; set; }
         public DbSet<Role> Roles { get; set; }
+        public DbSet<Parking> Parkings { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

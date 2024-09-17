@@ -1,0 +1,45 @@
+﻿@model Capstone_EPICODE.Models.Parcheggio.Parking
+
+<h2>Crea nuovo Parcheggio</h2>
+
+<form asp-action="Create">
+    <div class="form-group">
+        <label asp-for="Name" class="control-label"></label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Latitude" class="control-label"></label>
+        <input asp-for="Latitude" class="form-control" />
+        <span asp-validation-for="Latitude" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Longitude" class="control-label"></label>
+        <input asp-for="Longitude" class="form-control" />
+        <span asp-validation-for="Longitude" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="IsAvailable" class="control-label"></label>
+        <input asp-for="IsAvailable" type="checkbox" class="form-check-input" />
+        <span asp-validation-for="IsAvailable" class="text-danger"></span>
+    </div>
+
+    <!-- Aggiungi checkbox per selezionare i Parking Manager -->
+    <div class="form-group">
+        <label>Seleziona i Parking Manager:</label>
+        @foreach (var manager in ViewBag.ParkingManagers as List<SelectListItem>)
+        {
+            <div class="form-check">
+                <input type="checkbox" name="SelectedManagers" value="@manager.Value" class="form-check-input" id="manager_@manager.Value" />
+                <label class="form-check-label" for="manager_@manager.Value">@manager.Text</label>
+            </div>
+        }
+    </div>
+
+    <div class="form-group">
+        <input type="submit" value="Crea" class="btn btn-primary" />
+    </div>
+</form>

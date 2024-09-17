@@ -1,0 +1,37 @@
+﻿@model IEnumerable<Capstone_EPICODE.Models.Parcheggio.Parking>
+
+<h2>Assegna Parcheggi ai Parking Manager</h2>
+
+<form method="post" action="/Parking/AssignParkingsToManager">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Nome Parcheggio</th>
+                <th>Disponibilità</th>
+                <th>Assegna Parking Manager</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var spot in Model)
+            {
+                <tr>
+                    <td>@spot.Name</td>
+                    <td>@(spot.IsAvailable ? "Disponibile" : "Occupato")</td>
+                    <td>
+                        @foreach (var manager in ViewBag.ParkingManagers)
+                        {
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" name="ParkingAssignments[@spot.Id]" value="@manager.Value"
+                                @(spot.ParkingManagerId == int.Parse(manager.Value) ? "checked" : "") />
+
+                                <label class="form-check-label">@manager.Text</label>
+                            </div>
+                        }
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <input type="submit" value="Assegna" class="btn btn-primary" />
+</form>
