@@ -1,0 +1,36 @@
+﻿<h2>Le mie prenotazioni</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Parcheggio</th>
+            <th>Inizio</th>
+            <th>Fine</th>
+            <th>Prezzo Totale</th>
+            <th>Azioni</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var reservation in Model)
+        {
+            <tr>
+                <td>@reservation.Parking.Name</td>
+                <td>@reservation.ReservationStart</td>
+                <td>@reservation.ReservationEnd</td>
+                <td>@reservation.TotalPrice €</td>
+                <td>
+                    <form asp-action="Cancel" method="post">
+                        <input type="hidden" name="reservationId" value="@reservation.Id" />
+                        <button type="submit" class="btn btn-danger">Annulla</button>
+                    </form>
+
+                    <form asp-action="Extend" method="post">
+                        <input type="hidden" name="reservationId" value="@reservation.Id" />
+                        <input type="text" name="extensionDuration" placeholder="Durata estensione (in minuti)" class="form-control" />
+                        <button type="submit" class="btn btn-success">Estendi</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

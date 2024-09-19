@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿
+using System.ComponentModel.DataAnnotations;
 
 namespace Capstone_EPICODE.Models
 {
@@ -17,5 +18,8 @@ namespace Capstone_EPICODE.Models
 
 
         public List<Role> Roles { get; set; } = new List<Role>();
+
+      
+
     }
 }

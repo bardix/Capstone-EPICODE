@@ -1,0 +1,87 @@
+﻿@model Capstone_EPICODE.Models.CreateReservationViewModel
+
+<h2>Prenota un Parcheggio</h2>
+
+<form id="reservationForm" asp-action="Book" method="post">
+    <div class="form-group">
+        <label for="ParkingId">Seleziona Parcheggio</label>
+        <select asp-for="ParkingId" class="form-control" asp-items="@(new SelectList(Model.AvailableParkings, "Id", "Name"))">
+            <option value="">-- Seleziona --</option>
+        </select>
+        <span asp-validation-for="ParkingId" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="ReservationStart" class="control-label">Inizio Prenotazione</label>
+        <input asp-for="ReservationStart" id="ReservationStart" class="form-control" type="datetime-local" />
+        <span asp-validation-for="ReservationStart" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="ReservationEnd" class="control-label">Fine Prenotazione</label>
+        <input asp-for="ReservationEnd" id="ReservationEnd" class="form-control" type="datetime-local" />
+        <span asp-validation-for="ReservationEnd" class="text-danger"></span>
+    </div>
+
+    <input type="hidden" asp-for="UserId" />
+
+    <div class="form-group">
+        <input type="button" id="submitButton" value="Prenota" class="btn btn-primary" />
+    </div>
+</form>
+
+
+<!-- Modale di conferma -->
+<div class="modal fade" id="confirmationModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Conferma Prenotazione</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Sei sicuro di voler confermare questa prenotazione?</p>
+                <p><strong>Parcheggio:</strong> <span id="parkingName"></span></p>
+                <p><strong>Inizio:</strong> <span id="reservationStart"></span></p>
+                <p><strong>Fine:</strong> <span id="reservationEnd"></span></p>
+                <p><strong>Prezzo Totale:</strong> <span id="totalPrice"></span> €</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annulla</button>
+                <button type="button" id="confirmButton" class="btn btn-primary">Conferma</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        document.getElementById("submitButton").addEventListener("click", function (event) {
+            // Raccogli i dati dal form
+            var parkingId = document.getElementById("ParkingId").value;
+            var reservationStart = document.getElementById("ReservationStart").value;
+            var reservationEnd = document.getElementById("ReservationEnd").value;
+
+            // Mostra i dettagli nel modale
+            document.getElementById("parkingName").innerText = document.querySelector("#ParkingId option:checked").text;
+            document.getElementById("reservationStart").innerText = reservationStart;
+            document.getElementById("reservationEnd").innerText = reservationEnd;
+
+            // Prezzo calcolato (aggiungi la tua logica per il calcolo)
+            var startDate = new Date(reservationStart);
+            var endDate = new Date(reservationEnd);
+            var totalHours = (endDate - startDate) / 36e5; // Differenza in ore
+            var totalPrice = totalHours * 2; // Prezzo per ora
+            document.getElementById("totalPrice").innerText = totalPrice.toFixed(2);
+
+            // Mostra il modale
+            var confirmationModal = new bootstrap.Modal(document.getElementById('confirmationModal'));
+            confirmationModal.show();
+        });
+
+        document.getElementById("confirmButton").addEventListener("click", function (event) {
+            // Conferma la prenotazione inviando il form
+            document.getElementById("reservationForm").submit();
+        });
+    </script>
+}

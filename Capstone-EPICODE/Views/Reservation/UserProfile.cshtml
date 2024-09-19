@@ -1,0 +1,55 @@
+﻿@model Capstone_EPICODE.Models.UserProfileViewModel
+
+<h2>Profilo Utente</h2>
+
+<div class="card mb-4">
+    <div class="card-body">
+        <h4>Informazioni Utente</h4>
+        <p><strong>Nome:</strong> @Model.User.Name</p>
+        <p><strong>Email:</strong> @Model.User.Email</p>
+    </div>
+</div>
+
+<h2>Le mie Prenotazioni</h2>
+
+@if (!Model.Reservations.Any())
+{
+    <p>Non hai ancora effettuato prenotazioni.</p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Parcheggio</th>
+                <th>Inizio</th>
+                <th>Fine</th>
+                <th>Prezzo Totale</th>
+                <th>Azioni</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var reservation in Model.Reservations)
+            {
+                <tr>
+                    <td>@reservation.Parking.Name</td>
+                    <td>@reservation.ReservationStart.ToString("g")</td>
+                    <td>@reservation.ReservationEnd.ToString("g")</td>
+                    <td>@reservation.TotalPrice €</td>
+                    <td>
+                        <form asp-action="Cancel" method="post">
+                            <input type="hidden" name="reservationId" value="@reservation.Id" />
+                            <button type="submit" class="btn btn-danger">Annulla</button>
+                        </form>
+
+                        <form asp-action="Extend" method="post" class="mt-2">
+                            <input type="hidden" name="reservationId" value="@reservation.Id" />
+                            <input type="text" name="extensionDuration" placeholder="Durata estensione (in minuti)" class="form-control" />
+                            <button type="submit" class="btn btn-success mt-1">Estendi</button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

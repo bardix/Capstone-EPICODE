@@ -1,4 +1,5 @@
-﻿using Capstone_EPICODE.Models.Parcheggio;
+﻿using Capstone_EPICODE.Models;
+using Capstone_EPICODE.Models.Parcheggio;
 using Capstone_EPICODE.Services.Interfaces;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -150,5 +151,16 @@ namespace Capstone_EPICODE.Controllers
 
             return View(parkingSpots);
         }
+        [HttpGet]
+        public async Task<IActionResult> AvailableParkings()
+        {
+            // Ottieni i parcheggi disponibili
+            var parkingList = await _parkingService.GetAll();
+            var availableParkings = parkingList.Where(p => p.IsAvailable).ToList();
+
+            return View(availableParkings); // Passa i parcheggi disponibili alla vista
+        }
+
+
     }
 }

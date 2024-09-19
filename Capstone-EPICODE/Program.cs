@@ -1,5 +1,6 @@
 using Capstone_EPICODE.Data;
 using Capstone_EPICODE.Services;
+using Capstone_EPICODE.Services.Classes;
 using Capstone_EPICODE.Services.Interfaces;
 using Capstone_EPICODE.Services.Password;
 using Microsoft.AspNetCore.Authentication.Cookies;
@@ -15,6 +16,7 @@ builder.Services.AddScoped<IPasswordEnconder, PasswordEnconder>();
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<IRoleService, RoleService>();
 builder.Services.AddScoped<IParkingService, ParkingService>();
+builder.Services.AddScoped<IReservationService, ReservationService>();
 
 // Connessione al database
 var conn = builder.Configuration.GetConnectionString("SqlServer")!;

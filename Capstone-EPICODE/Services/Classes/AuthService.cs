@@ -103,6 +103,7 @@ namespace Capstone_EPICODE.Services
                     Name = user.Name,
                     Email = user.Email,
                     Roles = user.Roles.ToList(),
+                    Id = user.Id,
                 };
                 return userResulted;
             }

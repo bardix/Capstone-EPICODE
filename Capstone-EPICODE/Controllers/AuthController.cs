@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
+using Capstone_EPICODE.Services;
 
 namespace Capstone_EPICODE.Controllers
 {
@@ -163,6 +164,7 @@ namespace Capstone_EPICODE.Controllers
                 var claims = new List<Claim>
                 {
                     new Claim(ClaimTypes.Name, u.Name),
+                    new Claim(ClaimTypes.NameIdentifier, u.Id.ToString()),
                 };
                 u.Roles.ForEach(r => claims.Add(new Claim(ClaimTypes.Role, r.Name)));
 
@@ -254,6 +256,15 @@ namespace Capstone_EPICODE.Controllers
         {
             await _authSvc.RemoveRoleToUser(userid, roleName);
             return RedirectToAction("AllUsers", "Auth");
+        }
+
+        // Visualizza la pagina dell'utente con informazioni e link alle prenotazioni
+        [HttpGet]
+        public async Task<IActionResult> UserProfile()
+        {
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            var user = await _authSvc.GetById(int.Parse(userId)); // Recupera i dettagli dell'utente
+            return View(user); // Mostra la vista con i dettagli dell'utente
         }
     }
 }

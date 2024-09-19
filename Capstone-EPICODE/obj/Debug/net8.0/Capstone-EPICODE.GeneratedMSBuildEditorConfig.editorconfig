@@ -74,6 +74,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/david/Desktop/Epicode/Esercitazioni Epicode/Capstone/Capstone-EPICODE/Capstone-EPICODE/Views/Auth/UserProfile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxVc2VyUHJvZmlsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/david/Desktop/Epicode/Esercitazioni Epicode/Capstone/Capstone-EPICODE/Capstone-EPICODE/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -84,6 +88,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/david/Desktop/Epicode/Esercitazioni Epicode/Capstone/Capstone-EPICODE/Capstone-EPICODE/Views/Parking/AssignParkings.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFya2luZ1xBc3NpZ25QYXJraW5ncy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/david/Desktop/Epicode/Esercitazioni Epicode/Capstone/Capstone-EPICODE/Capstone-EPICODE/Views/Parking/Availableparkings.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFya2luZ1xBdmFpbGFibGVwYXJraW5ncy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/david/Desktop/Epicode/Esercitazioni Epicode/Capstone/Capstone-EPICODE/Capstone-EPICODE/Views/Parking/Create.cshtml]
@@ -104,6 +112,18 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/david/Desktop/Epicode/Esercitazioni Epicode/Capstone/Capstone-EPICODE/Capstone-EPICODE/Views/Parking/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFya2luZ1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/david/Desktop/Epicode/Esercitazioni Epicode/Capstone/Capstone-EPICODE/Capstone-EPICODE/Views/Reservation/Book.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YXRpb25cQm9vay5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/david/Desktop/Epicode/Esercitazioni Epicode/Capstone/Capstone-EPICODE/Capstone-EPICODE/Views/Reservation/MyReservation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YXRpb25cTXlSZXNlcnZhdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/david/Desktop/Epicode/Esercitazioni Epicode/Capstone/Capstone-EPICODE/Capstone-EPICODE/Views/Reservation/UserProfile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YXRpb25cVXNlclByb2ZpbGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/david/Desktop/Epicode/Esercitazioni Epicode/Capstone/Capstone-EPICODE/Capstone-EPICODE/Views/Shared/Error.cshtml]

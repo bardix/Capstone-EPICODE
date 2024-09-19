@@ -1,0 +1,32 @@
+﻿@model IEnumerable<Capstone_EPICODE.Models.Parcheggio.Parking>
+
+<h2>Parcheggi Disponibili</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Disponibilità</th>
+            <th>Azioni</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var parking in Model)
+        {
+            <tr>
+                <td>@parking.Name</td>
+                <td>@(parking.IsAvailable ? "Disponibile" : "Occupato")</td>
+                <td>
+                    @if (parking.IsAvailable)
+                    {
+                        <a asp-action="Book" asp-route-parkingId="@parking.Id" class="btn btn-primary">Prenota</a>
+                    }
+                    else
+                    {
+                        <span class="text-danger">Non disponibile</span>
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -23,7 +23,9 @@ namespace Capstone_EPICODE.Services
 
         public async Task<Parking> GetById(int id)
         {
-            return await _context.Parkings.FindAsync(id);
+            return await _context.Parkings
+                .Include(p => p.ParkingManager)  // Includi il ParkingManager
+                .FirstOrDefaultAsync(p => p.Id == id);
         }
 
         public async Task<Parking> Create(Parking parking)
