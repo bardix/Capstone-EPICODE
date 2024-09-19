@@ -22,6 +22,25 @@ namespace Capstone_EPICODE.Controllers
         }
 
 
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Delete(int reservationId)
+        {
+            try
+            {
+                // Elimina la prenotazione con IsActive impostato su false
+                await _reservationService.DeleteReservation(reservationId);
+                TempData["SuccessMessage"] = "Prenotazione eliminata con successo.";
+            }
+            catch (Exception ex)
+            {
+                TempData["ErrorMessage"] = $"Errore durante l'eliminazione della prenotazione: {ex.Message}";
+            }
+
+            return RedirectToAction("InactiveReservations");
+        }
+
+
         // Aggiungiamo l'azione per mostrare le informazioni utente e le prenotazioni
         [HttpGet]
         public async Task<IActionResult> UserProfile()
@@ -54,19 +73,47 @@ namespace Capstone_EPICODE.Controllers
             return View(userProfileViewModel);
         }
 
-
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Cancel(int reservationId)
         {
-            await _reservationService.CancelReservation(reservationId);
-            return RedirectToAction("MyReservation");
+            try
+            {
+                await _reservationService.CancelReservation(reservationId);
+                TempData["SuccessMessage"] = "La prenotazione è stata annullata con successo.";
+            }
+            catch (Exception ex)
+            {
+                TempData["ErrorMessage"] = $"Errore durante l'annullamento della prenotazione: {ex.Message}";
+            }
+
+            return RedirectToAction("UserProfile");
         }
 
         [HttpPost]
-        public async Task<IActionResult> Extend(int reservationId, TimeSpan extensionDuration)
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Extend(int reservationId, int extensionDurationInMinutes)
         {
-            await _reservationService.ExtendReservation(reservationId, extensionDuration);
-            return RedirectToAction("MyReservations");
+            if (extensionDurationInMinutes <= 0)
+            {
+                TempData["ErrorMessage"] = "La durata di estensione deve essere positiva.";
+                return RedirectToAction("UserProfile");
+            }
+
+            try
+            {
+                // Converti i minuti in `TimeSpan`
+                var extensionDuration = TimeSpan.FromMinutes(extensionDurationInMinutes);
+
+                await _reservationService.ExtendReservation(reservationId, extensionDuration);
+                TempData["SuccessMessage"] = "La prenotazione è stata estesa con successo.";
+            }
+            catch (Exception ex)
+            {
+                TempData["ErrorMessage"] = $"Errore durante l'estensione della prenotazione: {ex.Message}";
+            }
+
+            return RedirectToAction("UserProfile");
         }
 
         [HttpGet]
@@ -138,6 +185,17 @@ namespace Capstone_EPICODE.Controllers
             }
 
             return View(model); 
+        }
+
+
+
+        [HttpGet]
+        public async Task<IActionResult> InactiveReservations()
+        {
+            // Recupera tutte le prenotazioni con IsActive impostato su false
+            var inactiveReservations = await _reservationService.GetInactiveReservations();
+
+            return View(inactiveReservations);
         }
 
 

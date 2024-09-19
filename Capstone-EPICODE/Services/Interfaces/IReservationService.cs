@@ -9,6 +9,11 @@ namespace Capstone_EPICODE.Services.Interfaces
         Task<IEnumerable<Reservation>> GetUserReservations(int userId);
         Task CancelReservation(int reservationId);
         Task ExtendReservation(int reservationId, TimeSpan extensionDuration);
-    }
+        Task<IEnumerable<Reservation>> GetInactiveReservations();
+
+        Task DeleteReservation(int reservationId);
+
+
+        }
 
 }

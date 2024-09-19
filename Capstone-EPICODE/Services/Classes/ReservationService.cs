@@ -48,23 +48,28 @@ namespace Capstone_EPICODE.Services.Classes
 
             reservation.IsActive = false;
 
-            // Notifica al ParkingManager che la prenotazione è stata annullata
+            // Libera il parcheggio associato alla prenotazione
             var parking = await _context.Parkings.FindAsync(reservation.ParkingId);
-            NotifyParkingManager(parking.ParkingManagerId, reservation);
+            if (parking != null)
+            {
+                parking.IsAvailable = true;
+            }
 
             await _context.SaveChangesAsync();
         }
 
-        // Metodo per estendere la prenotazione
         public async Task ExtendReservation(int reservationId, TimeSpan extensionDuration)
         {
             var reservation = await GetReservationById(reservationId);
             if (reservation == null || !reservation.IsActive)
                 throw new Exception("Prenotazione non valida o già annullata.");
 
-            // Estendi la fine della prenotazione e aggiorna il prezzo totale
+            // Estendi la fine della prenotazione in base alla durata
             reservation.ReservationEnd = reservation.ReservationEnd.Add(extensionDuration);
+
+            // Aggiorna il prezzo in base alla durata estesa
             reservation.TotalPrice += CalculateExtensionPrice(extensionDuration);
+
             await _context.SaveChangesAsync();
         }
 
@@ -98,6 +103,27 @@ namespace Capstone_EPICODE.Services.Classes
             return await _context.Reservations.Include(r => r.Parking)
                                               .Where(r => r.UserId == userId && r.IsActive)
                                               .ToListAsync();
+        }
+
+
+        public async Task<IEnumerable<Reservation>> GetInactiveReservations()
+        {
+            return await _context.Reservations
+                .Include(r => r.Parking)
+                .Where(r => !r.IsActive)
+                .ToListAsync();
+        }
+
+        public async Task DeleteReservation(int reservationId)
+        {
+            var reservation = await _context.Reservations.FindAsync(reservationId);
+            if (reservation == null || reservation.IsActive)
+            {
+                throw new Exception("Prenotazione non trovata o è ancora attiva.");
+            }
+
+            _context.Reservations.Remove(reservation);
+            await _context.SaveChangesAsync();
         }
     }
 

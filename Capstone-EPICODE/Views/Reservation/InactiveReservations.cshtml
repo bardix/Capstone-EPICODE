@@ -1,0 +1,34 @@
+﻿@model IEnumerable<Capstone_EPICODE.Models.Prenotazione.Reservation>
+
+<h2>Prenotazioni Non Attive</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Parcheggio</th>
+            <th>Inizio</th>
+            <th>Fine</th>
+            <th>Prezzo Totale</th>
+            <th>Azioni</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var reservation in Model)
+        {
+            <tr>
+                <td>@reservation.Parking.Name</td>
+                <td>@reservation.ReservationStart.ToString("g")</td>
+                <td>@reservation.ReservationEnd.ToString("g")</td>
+                <td>@reservation.TotalPrice €</td>
+                <td>
+                    <!-- Form per eliminare la prenotazione -->
+                    <form asp-action="Delete" method="post">
+                        <input type="hidden" name="reservationId" value="@reservation.Id" />
+                        <button type="submit" class="btn btn-danger">Elimina</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+

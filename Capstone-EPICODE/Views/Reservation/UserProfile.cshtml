@@ -41,12 +41,6 @@ else
                             <input type="hidden" name="reservationId" value="@reservation.Id" />
                             <button type="submit" class="btn btn-danger">Annulla</button>
                         </form>
-
-                        <form asp-action="Extend" method="post" class="mt-2">
-                            <input type="hidden" name="reservationId" value="@reservation.Id" />
-                            <input type="text" name="extensionDuration" placeholder="Durata estensione (in minuti)" class="form-control" />
-                            <button type="submit" class="btn btn-success mt-1">Estendi</button>
-                        </form>
                     </td>
                 </tr>
             }
