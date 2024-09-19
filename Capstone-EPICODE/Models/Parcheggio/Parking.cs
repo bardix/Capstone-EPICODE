@@ -11,5 +11,7 @@
         // Relazione con il ParkingManager
         public int? ParkingManagerId { get; set; }
         public User? ParkingManager { get; set; }
+
+        public int? ActiveReservationCount { get; set; } = 0; // Contatore inizializzato a 0
     }
 }

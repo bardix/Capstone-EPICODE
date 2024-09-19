@@ -32,11 +32,16 @@ namespace Capstone_EPICODE.Services.Classes
                 IsActive = true
             };
 
-            // Notifica al ParkingManager
-            NotifyParkingManager(parking.ParkingManagerId, reservation);
+            // Incrementa il contatore di prenotazioni attive
+            parking.ActiveReservationCount++;
+            if (parking.ActiveReservationCount >= 5)
+            {
+                parking.IsAvailable = false; // Disabilita il parcheggio dopo 5 prenotazioni
+            }
 
             _context.Reservations.Add(reservation);
             await _context.SaveChangesAsync();
+
             return reservation;
         }
 
@@ -50,9 +55,13 @@ namespace Capstone_EPICODE.Services.Classes
 
             // Libera il parcheggio associato alla prenotazione
             var parking = await _context.Parkings.FindAsync(reservation.ParkingId);
-            if (parking != null)
+
+
+            // Decrementa il contatore di prenotazioni attive
+            parking.ActiveReservationCount--;
+            if (parking.ActiveReservationCount < 5)
             {
-                parking.IsAvailable = true;
+                parking.IsAvailable = true; // Rendi il parcheggio nuovamente disponibile
             }
 
             await _context.SaveChangesAsync();
