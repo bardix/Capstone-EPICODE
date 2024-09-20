@@ -4,26 +4,75 @@
     ViewData["Title"] = "Login";
 }
 
-<!-- Struttura della pagina di login -->
-<div class="container mt-5">
+<!-- Sfondo personalizzato -->
+<style>
+    body {
+        background-image: url("/img/parcheggiosfondo.jpg");
+        background-size: cover;
+    }
+
+    .login-card {
+
+        border-radius: 20px;
+        padding: 20px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    }
+
+
+    .btn-primary {
+        background-color: #0d6efd; /* Colore del bottone di login */
+        border: none;
+    }
+
+    .btn-primary:hover {
+        background-color: #0a58ca; /* Colore del bottone al passaggio del mouse */
+    }
+
+    .form-control {
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.9);
+        border: 1px solid #ddd;
+    }
+
+    .text-center img {
+        max-width: 150px;
+        margin-bottom: 20px;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
+
+<body>
+<div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-6 col-lg-4">
+        <div class="col">
             <div class="login-card card shadow-sm">
                 <div class="card-body">
-                    <h1 class="display-4 text-center mb-4">Login</h1>
+                    <!-- Logo GeParking -->
+                    <div class="text-center">
+                        <img src="/img/GeParking.jpg" alt="GeParking Logo">
+                    </div>
 
+                    <!-- Titolo -->
+                    <h1 class="text-center mb-4">Login</h1>
+
+                    <!-- Form di login -->
                     <form asp-action="Login">
                         <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
 
                         <div class="form-group mb-3">
-                            <label asp-for="Email" class="form-label"></label>
-                            <input asp-for="Email" class="form-control" />
+                            <label asp-for="Email" class="form-label">Email</label>
+                            <input asp-for="Email" class="form-control" placeholder="Inserisci la tua email" />
                             <span asp-validation-for="Email" class="text-danger"></span>
                         </div>
 
                         <div class="form-group mb-3">
-                            <label asp-for="Password" class="form-label"></label>
-                            <input asp-for="Password" type="password" class="form-control" />
+                            <label asp-for="Password" class="form-label">Password</label>
+                            <input asp-for="Password" type="password" class="form-control" placeholder="Inserisci la tua password" />
                             <span asp-validation-for="Password" class="text-danger"></span>
                         </div>
 
@@ -33,17 +82,17 @@
                     </form>
 
                     <div class="text-center mt-3">
-                        <a asp-action="Register" asp-controller="Auth" class="btn btn-link">Are you not registered?</a>
+                        <a asp-action="Register" asp-controller="Auth" class="btn btn-link">Non sei registrato?</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+</body>
 
 @section Scripts {
     @{
         await Html.RenderPartialAsync("_ValidationScriptsPartial");
     }
 }
-

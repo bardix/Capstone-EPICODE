@@ -13,6 +13,14 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Capstone\\Capstone-EPICODE\\Capstone-EPICODE\\wwwroot\\img\\GeParking.jpg",
+      "PackagePath": "staticwebassets\\img\\GeParking.jpg"
+    },
+    {
+      "Id": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Capstone\\Capstone-EPICODE\\Capstone-EPICODE\\wwwroot\\img\\parcheggiosfondo.jpg",
+      "PackagePath": "staticwebassets\\img\\parcheggiosfondo.jpg"
+    },
+    {
       "Id": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Capstone\\Capstone-EPICODE\\Capstone-EPICODE\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
