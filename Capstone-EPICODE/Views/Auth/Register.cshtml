@@ -3,81 +3,98 @@
 @{
     ViewData["Title"] = "Register";
 }
+<!-- Sfondo personalizzato -->
 <style>
+
 
     body {
         background-image: url("/img/parcheggiosfondo.jpg");
         background-size: cover;
     }
 
-    .footer {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        background-color: #333;
-        color: white;
-        padding: 20px 0;
-        text-align: center;
+    .register-card {
+        border-radius: 20px;
+        padding: 20px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
     }
 
+
+    .btn-primary {
+        background-color: #0d6efd; /* Colore del bottone di login */
+        border: none;
+    }
+
+        .btn-primary:hover {
+            background-color: #0a58ca; /* Colore del bottone al passaggio del mouse */
+        }
+
+    .form-control {
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.9);
+        border: 1px solid #ddd;
+    }
+
+    .text-center img {
+        max-width: 150px;
+        margin-bottom: 20px;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 </style>
+<body>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col">
+            <div class="register-card card shadow-sm">
+                <div class="card-body">
+                <!-- Logo GeParking -->
+                <div class="text-center">
+                    <img src="/img/GeParking.jpg" alt="GeParking Logo">
+                </div>
+                <!-- Titolo -->
+                <h1 class="text-center mb-4">Registrati</h1>
+                
+                <form asp-action="Register">
+                <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
 
-<h1>Register</h1>
-
-<h4>Create a new user</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Register">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-
-            <!-- Campo Nome -->
-            <div class="form-group">
+                <!-- Campo Nome -->
+            <div class="form-group mb-3">
                 <label asp-for="Name" class="control-label"></label>
                 <input asp-for="Name" class="form-control" />
                 <span asp-validation-for="Name" class="text-danger"></span>
             </div>
 
             <!-- Campo Email -->
-            <div class="form-group">
+            <div class="form-group mb-3">
                 <label asp-for="Email" class="control-label"></label>
                 <input asp-for="Email" class="form-control" />
                 <span asp-validation-for="Email" class="text-danger"></span>
             </div>
 
             <!-- Campo Password -->
-            <div class="form-group">
+            <div class="form-group mb-3">
                 <label asp-for="Password" class="control-label"></label>
                 <input asp-for="Password" type="password" class="form-control" />
                 <span asp-validation-for="Password" class="text-danger"></span>
             </div>
 
-            @* <!-- Selezione Ruoli con Checkbox -->
-            <div class="form-group">
-            <label>Ruolo</label>
-            <div>
-            @foreach (var role in ViewBag.Roles as IEnumerable<Microsoft.AspNetCore.Mvc.Rendering.SelectListItem>)
-            {
-            <div class="form-check">
-            <input type="checkbox" name="roleSelected" value="@role.Value" class="form-check-input" id="role_@role.Value" />
-            <label class="form-check-label" for="role_@role.Value">@role.Text</label>
-            </div>
-            }
-            </div>
-            </div> *@
-
             <!-- Pulsante di invio -->
-            <div class="form-group">
+            <div class="form-group text-center">
                 <input type="submit" value="Create" class="btn btn-primary" />
             </div>
         </form>
+                    <div class="text-center mt-3">
+                        <a asp-action="Index">Back to List</a>
+                    </div>
+        </div>
     </div>
 </div>
-
-<div>
-    <a asp-action="Index">Back to List</a>
 </div>
+</body>
 
 @section Scripts {
     @{
