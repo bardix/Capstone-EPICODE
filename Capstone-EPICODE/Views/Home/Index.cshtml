@@ -1,8 +1,175 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Home";
 }
+<style>
+    body {
+        background-image: url("/img/parcheggiosfondo.jpg");
+        background-size: cover;
+    }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    .hero-section {
+        border-radius: 20px;
+        background-color: rgba(170, 170, 170, 0.9); /* Grigio opaco */
+        background-size: cover;
+        background-position: center;
+        text-align: center;
+        padding: 2em 2em;
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+        .hero-section:hover {
+            background-color: rgba(170, 170, 170, 0.9); /* Grigio più scuro al hover */
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* Effetto ombra */
+        }
+
+        .hero-section h1 {
+            color: #ffffff;
+            font-size: 3rem;
+            margin-bottom: 20;
+        }
+
+        .hero-section p {
+            font-size: 1.5rem;
+            margin-bottom: 40px;
+        }
+
+    .cta-btn {
+        background-color: #0d6efd;
+        color: white;
+        padding: 15px 30px;
+        border-radius: 10px;
+        font-size: 1.2rem;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+    }
+
+        .cta-btn:hover {
+            color: white;
+            background-color: #0056b3; /* Cambia colore del bottone al hover */
+        }
+
+    .features-section {
+        display: flex;
+        justify-content: space-around;
+        margin: 50px 0;
+    }
+
+    .feature-card {
+        background-color: rgba(170, 170, 170, 0.9); /* Grigio opaco */
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        width: 30%;
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+        .feature-card:hover {
+            background-color: rgba(170, 170, 170, 0.9); /* Grigio più scuro al hover */
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* Effetto ombra */
+        }
+
+        .feature-card h3 {
+            color: #0d6efd;
+            margin-bottom: 20px;
+        }
+
+    .how-it-works {
+        text-align: center;
+        padding: 2em 2em;
+    }
+
+        .how-it-works h2 {
+            color: black;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+        }
+
+    .steps {
+        display: flex;
+        justify-content: space-around;
+        gap: 30px;
+    }
+
+    .step {
+        flex-basis: 30%;
+        background-color: rgba(170, 170, 170, 0.9); /* Grigio opaco */
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+        .step:hover {
+            background-color: rgba(170, 170, 170, 0.9); /* Grigio più scuro al hover */
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* Effetto ombra */
+        }
+
+        .step h3 {
+            margin-top: 15px;
+            font-size: 1.5rem;
+            color: #0d6efd;
+        }
+
+    .footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+        .footer a {
+            color: #0d6efd;
+            text-decoration: none;
+        }
+
+            .footer a:hover {
+                color: #fff; /* Cambia colore al hover sui link del footer */
+            }
+</style>
+
+
+<div class="hero-section">
+    <h1>Benvenuti su GeParking</h1>
+    <p>Prenota il tuo parcheggio in modo facile e veloce</p>
+    <a asp-controller="Auth" asp-action="Login" class="cta-btn">Inizia ora</a>
 </div>
+
+<div class="features-section">
+    <div class="feature-card">
+        <h3>Prenotazioni veloci</h3>
+        <p>Trova parcheggi in pochi secondi, disponibili subito.</p>
+    </div>
+    <div class="feature-card">
+        <h3>Gestisci le tue prenotazioni</h3>
+        <p>Controlla o annulla le tue prenotazioni in un attimo.</p>
+    </div>
+    <div class="feature-card">
+        <h3>Parcheggi sicuri</h3>
+        <p>Scegli tra una vasta gamma di parcheggi sicuri e affidabili.</p>
+    </div>
+</div>
+
+<div class="how-it-works">
+    <h2>Come funziona</h2>
+    <div class="steps">
+        <div class="step">
+            <h3>1. Cerca</h3>
+            <p>Trova i parcheggi più vicini alla tua destinazione.</p>
+        </div>
+        <div class="step">
+            <h3>2. Prenota</h3>
+            <p>Seleziona il tuo parcheggio preferito e prenotalo in pochi click.</p>
+        </div>
+        <div class="step">
+            <h3>3. Parcheggia</h3>
+            <p>Raggiungi il tuo parcheggio e goditi il tuo tempo senza preoccupazioni.</p>
+        </div>
+    </div>
+</div>
+

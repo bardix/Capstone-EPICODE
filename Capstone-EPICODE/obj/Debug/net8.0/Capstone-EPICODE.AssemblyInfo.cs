@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Capstone-EPICODE")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8d768d9942b66737138f371f0a304166f49c7a5a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e2c8855edb619a55e408e60f90e47443bd5e14f6")]
 [assembly: System.Reflection.AssemblyProductAttribute("Capstone-EPICODE")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Capstone-EPICODE")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

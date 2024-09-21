@@ -1,48 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Capstone\\Capstone-EPICODE\\Capstone-EPICODE\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{96127FCE-A208-4C3B-9DD9-943721E1AEBC}|Capstone-EPICODE.csproj|c:\\users\\david\\desktop\\epicode\\esercitazioni epicode\\capstone\\capstone-epicode\\capstone-epicode\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{96127FCE-A208-4C3B-9DD9-943721E1AEBC}|Capstone-EPICODE.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{96127FCE-A208-4C3B-9DD9-943721E1AEBC}|Capstone-EPICODE.csproj|c:\\users\\david\\desktop\\epicode\\esercitazioni epicode\\capstone\\capstone-epicode\\capstone-epicode\\views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{96127FCE-A208-4C3B-9DD9-943721E1AEBC}|Capstone-EPICODE.csproj|solutionrelative:views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{96127FCE-A208-4C3B-9DD9-943721E1AEBC}|Capstone-EPICODE.csproj|c:\\users\\david\\desktop\\epicode\\esercitazioni epicode\\capstone\\capstone-epicode\\capstone-epicode\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{96127FCE-A208-4C3B-9DD9-943721E1AEBC}|Capstone-EPICODE.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{96127FCE-A208-4C3B-9DD9-943721E1AEBC}|Capstone-EPICODE.csproj|c:\\users\\david\\desktop\\epicode\\esercitazioni epicode\\capstone\\capstone-epicode\\capstone-epicode\\models\\parcheggio\\parking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{96127FCE-A208-4C3B-9DD9-943721E1AEBC}|Capstone-EPICODE.csproj|solutionrelative:models\\parcheggio\\parking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{96127FCE-A208-4C3B-9DD9-943721E1AEBC}|Capstone-EPICODE.csproj|c:\\users\\david\\desktop\\epicode\\esercitazioni epicode\\capstone\\capstone-epicode\\capstone-epicode\\views\\auth\\createrole.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{96127FCE-A208-4C3B-9DD9-943721E1AEBC}|Capstone-EPICODE.csproj|solutionrelative:views\\auth\\createrole.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{96127FCE-A208-4C3B-9DD9-943721E1AEBC}|Capstone-EPICODE.csproj|c:\\users\\david\\desktop\\epicode\\esercitazioni epicode\\capstone\\capstone-epicode\\capstone-epicode\\views\\auth\\allusers.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{96127FCE-A208-4C3B-9DD9-943721E1AEBC}|Capstone-EPICODE.csproj|solutionrelative:views\\auth\\allusers.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{96127FCE-A208-4C3B-9DD9-943721E1AEBC}|Capstone-EPICODE.csproj|c:\\users\\david\\desktop\\epicode\\esercitazioni epicode\\capstone\\capstone-epicode\\capstone-epicode\\views\\auth\\allroles.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{96127FCE-A208-4C3B-9DD9-943721E1AEBC}|Capstone-EPICODE.csproj|solutionrelative:views\\auth\\allroles.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{96127FCE-A208-4C3B-9DD9-943721E1AEBC}|Capstone-EPICODE.csproj|c:\\users\\david\\desktop\\epicode\\esercitazioni epicode\\capstone\\capstone-epicode\\capstone-epicode\\views\\parking\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{96127FCE-A208-4C3B-9DD9-943721E1AEBC}|Capstone-EPICODE.csproj|solutionrelative:views\\parking\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{96127FCE-A208-4C3B-9DD9-943721E1AEBC}|Capstone-EPICODE.csproj|c:\\users\\david\\desktop\\epicode\\esercitazioni epicode\\capstone\\capstone-epicode\\capstone-epicode\\services\\classes\\reservationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{96127FCE-A208-4C3B-9DD9-943721E1AEBC}|Capstone-EPICODE.csproj|solutionrelative:services\\classes\\reservationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{96127FCE-A208-4C3B-9DD9-943721E1AEBC}|Capstone-EPICODE.csproj|c:\\users\\david\\desktop\\epicode\\esercitazioni epicode\\capstone\\capstone-epicode\\capstone-epicode\\migrations\\20240919152955_activereservationcount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{96127FCE-A208-4C3B-9DD9-943721E1AEBC}|Capstone-EPICODE.csproj|solutionrelative:migrations\\20240919152955_activereservationcount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -50,139 +9,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 337,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Capstone\\Capstone-EPICODE\\Capstone-EPICODE\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Capstone\\Capstone-EPICODE\\Capstone-EPICODE\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-20T14:47:02.142Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Capstone\\Capstone-EPICODE\\Capstone-EPICODE\\Views\\Parking\\Create.cshtml",
-              "RelativeDocumentMoniker": "Views\\Parking\\Create.cshtml",
-              "ToolTip": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Capstone\\Capstone-EPICODE\\Capstone-EPICODE\\Views\\Parking\\Create.cshtml",
-              "RelativeToolTip": "Views\\Parking\\Create.cshtml",
-              "ViewState": "AQIAABsAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-20T14:12:18.4Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Capstone\\Capstone-EPICODE\\Capstone-EPICODE\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Capstone\\Capstone-EPICODE\\Capstone-EPICODE\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "Controllers\\AuthController.cs",
-              "ViewState": "AQIAADYAAAAAAAAAAAAowAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-20T13:14:30.809Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Capstone\\Capstone-EPICODE\\Capstone-EPICODE\\Views\\Auth\\Login.cshtml",
-              "RelativeDocumentMoniker": "Views\\Auth\\Login.cshtml",
-              "ToolTip": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Capstone\\Capstone-EPICODE\\Capstone-EPICODE\\Views\\Auth\\Login.cshtml",
-              "RelativeToolTip": "Views\\Auth\\Login.cshtml",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAAACsAAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-20T13:01:29.955Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "20240919152955_ActiveReservationCount.cs",
-              "DocumentMoniker": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Capstone\\Capstone-EPICODE\\Capstone-EPICODE\\Migrations\\20240919152955_ActiveReservationCount.cs",
-              "RelativeDocumentMoniker": "Migrations\\20240919152955_ActiveReservationCount.cs",
-              "ToolTip": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Capstone\\Capstone-EPICODE\\Capstone-EPICODE\\Migrations\\20240919152955_ActiveReservationCount.cs",
-              "RelativeToolTip": "Migrations\\20240919152955_ActiveReservationCount.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-19T15:29:55.836Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Parking.cs",
-              "DocumentMoniker": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Capstone\\Capstone-EPICODE\\Capstone-EPICODE\\Models\\Parcheggio\\Parking.cs",
-              "RelativeDocumentMoniker": "Models\\Parcheggio\\Parking.cs",
-              "ToolTip": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Capstone\\Capstone-EPICODE\\Capstone-EPICODE\\Models\\Parcheggio\\Parking.cs",
-              "RelativeToolTip": "Models\\Parcheggio\\Parking.cs",
-              "ViewState": "AQIAAAIAAAAAAAAAAAAxwAwAAAAxAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-19T15:19:51.009Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "AllRoles.cshtml",
-              "DocumentMoniker": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Capstone\\Capstone-EPICODE\\Capstone-EPICODE\\Views\\Auth\\AllRoles.cshtml",
-              "RelativeDocumentMoniker": "Views\\Auth\\AllRoles.cshtml",
-              "ToolTip": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Capstone\\Capstone-EPICODE\\Capstone-EPICODE\\Views\\Auth\\AllRoles.cshtml",
-              "RelativeToolTip": "Views\\Auth\\AllRoles.cshtml",
-              "ViewState": "AQIAABsAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-20T14:12:22.909Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AllUsers.cshtml",
-              "DocumentMoniker": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Capstone\\Capstone-EPICODE\\Capstone-EPICODE\\Views\\Auth\\AllUsers.cshtml",
-              "RelativeDocumentMoniker": "Views\\Auth\\AllUsers.cshtml",
-              "ToolTip": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Capstone\\Capstone-EPICODE\\Capstone-EPICODE\\Views\\Auth\\AllUsers.cshtml",
-              "RelativeToolTip": "Views\\Auth\\AllUsers.cshtml",
-              "ViewState": "AQIAABgAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-20T14:12:26.653Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CreateRole.cshtml",
-              "DocumentMoniker": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Capstone\\Capstone-EPICODE\\Capstone-EPICODE\\Views\\Auth\\CreateRole.cshtml",
-              "RelativeDocumentMoniker": "Views\\Auth\\CreateRole.cshtml",
-              "ToolTip": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Capstone\\Capstone-EPICODE\\Capstone-EPICODE\\Views\\Auth\\CreateRole.cshtml",
-              "RelativeToolTip": "Views\\Auth\\CreateRole.cshtml",
-              "ViewState": "AQIAABIAAAAAAAAAAAAAAB8AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-20T14:12:30.172Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ReservationService.cs",
-              "DocumentMoniker": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Capstone\\Capstone-EPICODE\\Capstone-EPICODE\\Services\\Classes\\ReservationService.cs",
-              "RelativeDocumentMoniker": "Services\\Classes\\ReservationService.cs",
-              "ToolTip": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Capstone\\Capstone-EPICODE\\Capstone-EPICODE\\Services\\Classes\\ReservationService.cs",
-              "RelativeToolTip": "Services\\Classes\\ReservationService.cs",
-              "ViewState": "AQIAADsAAAAAAAAAAAAgwEIAAAAuAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-19T15:23:48.822Z"
             }
           ]
         }
