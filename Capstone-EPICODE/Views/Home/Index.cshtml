@@ -31,6 +31,7 @@
         .hero-section p {
             font-size: 1.5rem;
             margin-bottom: 40px;
+            font-weight:600;
         }
 
     .cta-btn {
@@ -135,7 +136,10 @@
 
 
 <div class="hero-section">
-    <h1>Benvenuti su GeParking</h1>
+    <div class="justify-content-center">
+    <img class="col-6" src="/img/GeParking-removebg-preview.png" alt="GeParking Logo" style="max-width: 10em;" />
+    <h1 class="text-center">Benvenuti su GeParking</h1>
+</div>
     <p>Prenota il tuo parcheggio in modo facile e veloce</p>
     <a asp-controller="Auth" asp-action="Login" class="cta-btn">Inizia ora</a>
 </div>

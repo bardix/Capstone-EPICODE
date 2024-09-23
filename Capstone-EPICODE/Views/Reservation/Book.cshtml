@@ -1,71 +1,122 @@
 ﻿@model Capstone_EPICODE.Models.CreateReservationViewModel
 
-<h2>Prenota un Parcheggio</h2>
+<style>
 
-<form id="reservationForm" asp-action="Book" method="post">
-    <div class="form-group">
-        <label for="ParkingId">Seleziona Parcheggio</label>
-        <select asp-for="ParkingId" class="form-control" asp-items="@(new SelectList(Model.AvailableParkings, "Id", "Name"))">
+    body {
+        background-image: url("/img/parcheggiosfondo.jpg");
+        background-size: cover;
+    }
+
+    .hero-section {
+        border-radius: 20px;
+        background-color: rgba(170, 170, 170, 0.9); /* Grigio opaco */
+        background-size: cover;
+        background-position: center;
+        text-align: center;
+        padding: 2em 2em;
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+        .hero-section h1 {
+            color: #ffffff;
+            font-size: 3rem;
+            margin-bottom: 20;
+        }
+</style>
+<body>
+    <div class="hero-section mb-4">
+        <h1 class="text-center">Prenota un Parcheggio</h1>
+    </div>
+<form id="reservationForm" asp-action="Book" method="post" class="p-4 shadow-lg rounded border border-light bg-light">
+    <div class="form-group mb-4">
+        <label for="ParkingId" class="form-label">🚗 Seleziona Parcheggio</label>
+        <select asp-for="ParkingId" class="form-control" asp-items="@(new SelectList(Model.AvailableParkings, "Id", "Name"))" style="border: 2px solid #007bff;">
             <option value="">-- Seleziona --</option>
         </select>
         <span asp-validation-for="ParkingId" class="text-danger"></span>
     </div>
 
-    <div class="form-group">
-        <label asp-for="ReservationStart" class="control-label">Inizio Prenotazione</label>
-        <input asp-for="ReservationStart" id="ReservationStart" class="form-control" type="datetime-local" />
+    <div class="form-group mb-4">
+        <label asp-for="ReservationStart" class="control-label">📅 Inizio Prenotazione</label>
+        <input asp-for="ReservationStart" id="ReservationStart" class="form-control" type="datetime-local" style="border: 2px solid #007bff;" />
         <span asp-validation-for="ReservationStart" class="text-danger"></span>
     </div>
 
-    <div class="form-group">
-        <label asp-for="ReservationEnd" class="control-label">Fine Prenotazione</label>
-        <input asp-for="ReservationEnd" id="ReservationEnd" class="form-control" type="datetime-local" />
+    <div class="form-group mb-4">
+        <label asp-for="ReservationEnd" class="control-label">📅 Fine Prenotazione</label>
+        <input asp-for="ReservationEnd" id="ReservationEnd" class="form-control" type="datetime-local" style="border: 2px solid #007bff;" />
         <span asp-validation-for="ReservationEnd" class="text-danger"></span>
     </div>
 
     <input type="hidden" asp-for="UserId" />
 
-    <div class="form-group">
-        <input type="button" id="submitButton" value="Prenota" class="btn btn-primary" />
+    <div class="form-group text-center">
+        <input type="button" id="submitButton" value="📩 Prenota" class="btn btn-primary btn-lg px-5" style="background-color: #28a745; border-color: #28a745;" />
     </div>
+
+        <!-- Modale di conferma -->
+        <div class="modal fade" id="confirmationModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header bg-info text-white">
+                        <h5 class="modal-title" id="exampleModalLabel">Conferma Prenotazione</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Sei sicuro di voler confermare questa prenotazione?</p>
+                        <p><strong>Parcheggio:</strong> <span id="parkingName"></span></p>
+                        <p><strong>Inizio:</strong> <span id="reservationStart"></span></p>
+                        <p><strong>Fine:</strong> <span id="reservationEnd"></span></p>
+                        <p><strong>Prezzo Totale:</strong> <span id="totalPrice"></span> €</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annulla</button>
+                        <button type="submit" id="confirmButton" class="btn btn-primary">Conferma</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 </form>
 
 
-<!-- Modale di conferma -->
-<div class="modal fade" id="confirmationModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Conferma Prenotazione</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <p>Sei sicuro di voler confermare questa prenotazione?</p>
-                <p><strong>Parcheggio:</strong> <span id="parkingName"></span></p>
-                <p><strong>Inizio:</strong> <span id="reservationStart"></span></p>
-                <p><strong>Fine:</strong> <span id="reservationEnd"></span></p>
-                <p><strong>Prezzo Totale:</strong> <span id="totalPrice"></span> €</p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annulla</button>
-                <button type="button" id="confirmButton" class="btn btn-primary">Conferma</button>
-            </div>
-        </div>
-    </div>
-</div>
 
+
+</body>
 @section Scripts {
     <script>
+
+        // Funzione per formattare la data in modo leggibile (senza la "T")
+        function formatDateTime(dateTime) {
+            // Converte la data in oggetto Date
+            let date = new Date(dateTime);
+
+            // Estrae i componenti della data e ora
+            let year = date.getFullYear();
+            let month = String(date.getMonth() + 1).padStart(2, '0');
+            let day = String(date.getDate()).padStart(2, '0');
+            let hours = String(date.getHours()).padStart(2, '0');
+            let minutes = String(date.getMinutes()).padStart(2, '0');
+            let seconds = String(date.getSeconds()).padStart(2, '0');
+
+            // Ritorna la data nel formato "YYYY-MM-DD HH:MM:SS"
+            return `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;
+        }
+
+        // Aggiungi eventuali ulteriori logiche per l'interazione con il modale.
+
         document.getElementById("submitButton").addEventListener("click", function (event) {
             // Raccogli i dati dal form
             var parkingId = document.getElementById("ParkingId").value;
             var reservationStart = document.getElementById("ReservationStart").value;
             var reservationEnd = document.getElementById("ReservationEnd").value;
 
-            // Mostra i dettagli nel modale
+            // Mostra i dettagli nel modale di conferma
+           
             document.getElementById("parkingName").innerText = document.querySelector("#ParkingId option:checked").text;
-            document.getElementById("reservationStart").innerText = reservationStart;
-            document.getElementById("reservationEnd").innerText = reservationEnd;
+            document.getElementById("reservationStart").innerHTML = formatDateTime(reservationStart);
+            document.getElementById("reservationEnd").innerHTML = formatDateTime(reservationEnd);
+
+
 
             // Prezzo calcolato (aggiungi la tua logica per il calcolo)
             var startDate = new Date(reservationStart);
@@ -74,14 +125,24 @@
             var totalPrice = totalHours * 2; // Prezzo per ora
             document.getElementById("totalPrice").innerText = totalPrice.toFixed(2);
 
-            // Mostra il modale
+            // Mostra il modale di conferma
             var confirmationModal = new bootstrap.Modal(document.getElementById('confirmationModal'));
             confirmationModal.show();
         });
 
         document.getElementById("confirmButton").addEventListener("click", function (event) {
-            // Conferma la prenotazione inviando il form
-            document.getElementById("reservationForm").submit();
+  
+
+            setTimeout(function () {
+                // Nascondi il modale di conferma
+                var confirmationModal = bootstrap.Modal.getInstance(document.getElementById('confirmationModal'));
+                confirmationModal.hide();
+
+                // Mostra il modale di ringraziamento
+                var thankYouModal = new bootstrap.Modal(document.getElementById('thankYouModal'));
+                thankYouModal.show();
+            }, 500); // Simula un piccolo ritardo prima di mostrare il modale di ringraziamento
         });
+
     </script>
 }

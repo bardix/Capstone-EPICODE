@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "V9ap/SxP7hiSugvUkirb4Z61OOgDRNZpYR0gisNx9bA=",
+  "Hash": "afJ0fxsFVZXbzb9Q5D56L7mTB1Bnu8rf+H87R/WJaGg=",
   "Source": "Capstone-EPICODE",
   "BasePath": "_content/Capstone-EPICODE",
   "Mode": "Default",
@@ -110,6 +110,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\GeParking.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Capstone\\Capstone-EPICODE\\Capstone-EPICODE\\wwwroot\\img\\GeParking-removebg-preview.png",
+      "SourceId": "Capstone-EPICODE",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Capstone\\Capstone-EPICODE\\Capstone-EPICODE\\wwwroot\\",
+      "BasePath": "_content/Capstone-EPICODE",
+      "RelativePath": "img/GeParking-removebg-preview.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\GeParking-removebg-preview.png"
     },
     {
       "Identity": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Capstone\\Capstone-EPICODE\\Capstone-EPICODE\\wwwroot\\img\\parcheggiosfondo.jpg",

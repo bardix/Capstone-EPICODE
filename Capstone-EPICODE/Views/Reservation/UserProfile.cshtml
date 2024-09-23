@@ -1,49 +1,91 @@
 ﻿@model Capstone_EPICODE.Models.UserProfileViewModel
 
-<h2>Profilo Utente</h2>
+<style>
 
-<div class="card mb-4">
+    body {
+        background-image: url("/img/parcheggiosfondo.jpg");
+        background-size: cover;
+    }
+
+    .hero-section {
+        border-radius: 20px;
+        background-color: rgba(170, 170, 170, 0.9); /* Grigio opaco */
+        background-size: cover;
+        background-position: center;
+        text-align: center;
+        padding: 2em 2em;
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+        .hero-section:hover {
+            background-color: rgba(170, 170, 170, 0.9); /* Grigio più scuro al hover */
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* Effetto ombra */
+        }
+
+        .hero-section h2 {
+            color: #ffffff;
+            font-size: 2rem;
+            margin-bottom: 20;
+        }
+</style>
+
+<body>
+    <div class="hero-section mb-4">
+        <h2>Profilo Utente</h2>
+    </div>
+
+<div class="card shadow-sm mb-5 border-0">
     <div class="card-body">
-        <h4>Informazioni Utente</h4>
+        <h4 class="card-title text-secondary">Informazioni Utente</h4>
+        <hr />
         <p><strong>Nome:</strong> @Model.User.Name</p>
         <p><strong>Email:</strong> @Model.User.Email</p>
     </div>
 </div>
-
-<h2>Le mie Prenotazioni</h2>
+<div class="hero-section mb-4">
+    <h2>Le mie Prenotazioni</h2>
+    </div>
 
 @if (!Model.Reservations.Any())
 {
-    <p>Non hai ancora effettuato prenotazioni.</p>
+    <div class="alert alert-warning" role="alert">
+        <p class="mb-0">Non hai ancora effettuato prenotazioni.</p>
+    </div>
 }
 else
 {
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Parcheggio</th>
-                <th>Inizio</th>
-                <th>Fine</th>
-                <th>Prezzo Totale</th>
-                <th>Azioni</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var reservation in Model.Reservations)
-            {
+    <div class="table-responsive">
+        <table class="table table-hover table-bordered align-middle">
+            <thead class="table-dark">
                 <tr>
-                    <td>@reservation.Parking.Name</td>
-                    <td>@reservation.ReservationStart.ToString("g")</td>
-                    <td>@reservation.ReservationEnd.ToString("g")</td>
-                    <td>@reservation.TotalPrice €</td>
-                    <td>
-                        <form asp-action="Cancel" method="post">
-                            <input type="hidden" name="reservationId" value="@reservation.Id" />
-                            <button type="submit" class="btn btn-danger">Annulla</button>
-                        </form>
-                    </td>
+                    <th>Parcheggio</th>
+                    <th>Inizio</th>
+                    <th>Fine</th>
+                    <th>Prezzo Totale</th>
+                    <th>Azioni</th>
                 </tr>
-            }
-        </tbody>
-    </table>
+            </thead>
+            <tbody>
+                @foreach (var reservation in Model.Reservations)
+                {
+                    <tr>
+                            <td style="background-color: rgba(170, 170, 170, 0.9)">@reservation.Parking.Name</td>
+                            <td style="background-color: rgba(170, 170, 170, 0.9)">@reservation.ReservationStart.ToString("g")</td>
+                            <td style="background-color: rgba(170, 170, 170, 0.9)">@reservation.ReservationEnd.ToString("g")</td>
+                            <td style="background-color: rgba(170, 170, 170, 0.9)">@reservation.TotalPrice €</td>
+                            <td style="background-color: rgba(170, 170, 170, 0.9)">
+                                <form asp-action="Cancel" method="post">
+                                <input type="hidden" name="reservationId" value="@reservation.Id" />
+                                <button type="submit" class="btn btn-outline-danger">
+                                    <i class="fas fa-trash-alt"></i> Annulla
+                                </button>
+                            </form>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
 }
+
+</body>
