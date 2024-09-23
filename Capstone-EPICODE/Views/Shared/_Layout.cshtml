@@ -38,29 +38,44 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                        <!-- Link alla pagina di registrazione -->
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Auth" asp-action="Register">Registrazione</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Auth" asp-action="AllRoles">Ruoli</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Auth" asp-action="AllUsers">Utenti</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Parking" asp-action="Index">Parcheggi</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Reservation" asp-action="Book">Prenota</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Reservation" asp-action="InactiveReservations">Prenotazioni</a>
-                        </li>
 
+
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            @if (User.IsInRole("User"))
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Reservation" asp-action="Book">Prenota</a>
+                                </li>
+                            }
+                            @if (User.IsInRole("Admin"))
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Auth" asp-action="AllRoles">Ruoli</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Auth" asp-action="AllUsers">Utenti</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Parking" asp-action="Index">Parcheggi</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Reservation" asp-action="InactiveReservations">Prenotazioni</a>
+                                </li>
+                            }
+
+                            @if(User.IsInRole("ParkingManager")){
+
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Parking" asp-action="Index">Parcheggi</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Reservation" asp-action="InactiveReservations">Prenotazioni</a>
+                                </li>
+                            }
+
+                        }
                     </ul>
 
                     <!-- Sezione di login/logout e visualizzazione nome utente -->
@@ -81,6 +96,9 @@
                         }
                         else
                         {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Auth" asp-action="Register">Registrati</a>
+                            </li>
                             <li class="nav-item">
                                 <a class="nav-link text-dark" asp-controller="Auth" asp-action="Login">Login</a>
                             </li>
