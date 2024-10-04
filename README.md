@@ -19,17 +19,17 @@ Funzionalità Principali:
 -	Registrazione e Autenticazione degli Utenti:
   	Gli utenti potranno creare un account, effettuare il login e gestire le loro prenotazioni attraverso un'interfaccia intuitiva.
 
--	Visualizzazione della Mappa dei Parcheggi:
+-	Visualizzazione della Mappa dei Parcheggi (coming soon) : 
   	Una mappa mostrerà i parcheggi disponibili, evidenziando in verde quelli liberi e in rosso quelli occupati o prenotati. Gli utenti potranno visualizzare la mappa una volta che si 	trovano in prossimità del parcheggio desiderato.
 
 -	Sistema di Prenotazione:
   	Gli utenti potranno prenotare un parcheggio disponibile, ricevendo una conferma immediata. Le prenotazioni saranno automaticamente registrate nel sistema e il parcheggio sarà 	contrassegnato come occupato.
 
--	Notifiche e Promemoria:
+-	Notifiche e Promemoria (coming soon):
 	Notifiche automatiche ricorderanno agli utenti le loro prenotazioni, con la possibilità di ricevere aggiornamenti via email o SMS.
 
 -	Pannello di Amministrazione:
-	Gli amministratori del sistema potranno gestire e monitorare i parcheggi, analizzare i dati di utilizzo e generare report.
+	Gli amministratori del sistema potranno gestire e monitorare i parcheggi.
 
 Tecnologie Utilizzate:
 
@@ -44,14 +44,6 @@ Backend:
 -	.NET Core: Backend solido per gestire la logica dell'applicazione e le interazioni con il database.
 
 -	SQL Server: Database relazionale utilizzato per memorizzare dati relativi agli utenti, ai parcheggi e alle prenotazioni.
-
-Testing:
-
--	Postman: Strumento per testare le API durante lo sviluppo.
-
-Deploy e Hosting:
-
--	Microsoft Azure: Piattaforma cloud utilizzata per il deploy dell'applicazione, garantendo scalabilità e affidabilità.
 
 Conclusione:
 
